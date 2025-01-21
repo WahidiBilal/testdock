@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Navbar Fragment</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}" />
+</head>
+<body>
+    <div th:fragment="navbar">
+        <div class="navbar">
+            <ul>
+                <li><a href="/departments">Departments</a></li>
+                <li><a href="/employees">Employees</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

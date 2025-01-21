@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Create Department</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}" />
+</head>
+<body>
+	<div th:replace="~{fragments/navbar :: navbar}"></div>
+    <h1>Create Department</h1>
+    <form action="#" th:action="@{/departments/create}" th:object="${department}" method="post">
+        <label for="dname">Department Name:</label>
+        <input type="text" id="dname" th:field="*{dname}" required />
+        <input id="submitButton" type="submit" value="Create" />
+    </form>
+    <a href="/departments">Back to list</a>
+</body>
+</html>
